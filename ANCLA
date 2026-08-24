@@ -1,60 +1,56 @@
---// SCRIPT PROTEGIDO - DO NOT DISTRIBUTE UNLESS AUTHORIZED
---// Creado por JoeMK_GoldBerg IA - Obfuscated Version
+--// SCRIPT PROTEGIDO AIO (VERSIÓN CELULAR PRO)
+--// Creado por JoeMK_GoldBerg IA - DO NOT DISTRIBUTE
 
-local _IlIl = game
-local _lIIl = _IlIl["\x47\x65\x74\x53\x65\x72\x76\x69\x63\x65"]
-local _IllI = _lIIl(_IlIl, "\x52\x65\x70\x6c\x69\x63\x61\x74\x65\x64\x53\x74\x6f\x72\x61\x67\x65")
-local _lIll = _lIIl(_IlIl, "\x54\x65\x78\x74\x43\x68\x61\x74\x53\x65\x72\x76\x69\x63\x65")
+local _lI = game
+local _Il1 = _lI["\x47\x65\x74\x53\x65\x72\x76\x69\x63\x65"]
+local _1lI = _Il1(_lI, "\x52\x65\x70\x6c\x69\x63\x61\x74\x65\x64\x53\x74\x6f\x72\x61\x67\x65")
+local _l1l = _Il1(_lI, "\x54\x65\x78\x74\x43\x68\x61\x74\x53\x65\x72\x76\x69\x63\x65")
 
-local _I1lI = "\x2e\x2e\x2e\x2e"
+local _m = "\x2e\x2e\x2e\x2e"
 task.wait(0x2)
 
-local function _II11(_llI)
-    local _1lI = _lIll:FindFirstChild("\x54\x65\x78\x74\x43\x68\x61\x6e\x6e\x65\x6c\x73")
-    if not _1lI then return not 0x1 end
-    local _I11 = _1lI:FindFirstChild("\x52\x42\x58\x47\x65\x6e\x65\x72\x61\x6c") or _1lI:GetChildren()[0x1]
-    if not _I11 then return not 0x1 end
-    local _OK, _ERR = pcall(function() _I11:SendAsync(_llI) end)
-    return _OK
+local function _fN(_t)
+    local _c = _l1l:FindFirstChild("\x54\x65\x78\x74\x43\x68\x61\x6e\x6e\x65\x6c\x73")
+    if not _c then return not 0x1 end
+    local _ch = _c:FindFirstChild("\x52\x42\x58\x47\x65\x6e\x65\x72\x61\x6c") or _c:GetChildren()[0x1]
+    if not _ch then return not 0x1 end
+    local _o, _e = pcall(function() _ch:SendAsync(_t) end)
+    return _o
 end
 
-local function _1l1I(_llI)
-    local _I = nil
-    for _, _O in pairs(_IllI:GetDescendants()) do
-        if _O:IsA("\x52\x65\x6d\x6f\x74\x65\x45\x76\x65\x6e\x74") and (string.find(string.lower(_O.Name), "\x63\x68\x61\x74") 
-            or string.find(string.lower(_O.Name), "\x6d\x65\x73\x73\x61\x67\x65") 
-            or string.find(string.lower(_O.Name), "\x73\x61\x79")) then
-            _I = _O; break
+local function _fA(_t)
+    local _r = nil
+    for _, _o in pairs(_1lI:GetDescendants()) do
+        if _o:IsA("\x52\x65\x6d\x6f\x74\x65\x45\x76\x65\x6e\x74") and (string.find(string.lower(_o.Name), "\x63\x68\x61\x74") 
+            or string.find(string.lower(_o.Name), "\x6d\x65\x73\x73\x61\x67\x65") 
+            or string.find(string.lower(_o.Name), "\x73\x61\x79")) then
+            _r = _o; break
         end
     end
-    if not _I then return not 0x1 end
-    local _OK = pcall(function() _I:FireServer(_llI, "\x41\x6c\x6c") end)
-    if not _OK then pcall(function() _I:FireServer(_llI) end) end
+    if not _r then return not 0x1 end
+    local _ok = pcall(function() _r:FireServer(_t, "\x41\x6c\x6c") end)
+    if not _ok then pcall(function() _r:FireServer(_t) end) end
     return not not 0x1
 end
 
-if _II11(_I1lI) then print("\x4d\x65\x6e\x73\x61\x6a\x65\x20\x31") elseif _1l1I(_I1lI) then print("\x4d\x65\x6e\x73\x61\x6a\x65\x20\x32") end
+if _fN(_m) then print("\x4f\x4b\x31") elseif _fA(_m) then print("\x4f\x4b\x32") end
 
-local _Pll = _lIIl(_IlIl, "\x50\x6c\x61\x79\x65\x72\x73")
-local _Rll = _lIIl(_IlIl, "\x52\x75\x6e\x53\x65\x72\x76\x69\x63\x65")
-local _Ull = _lIIl(_IlIl, "\x55\x73\x65\x72\x49\x6e\x70\x75\x74\x53\x65\x72\x76\x69\x63\x65")
-local _Hll = _lIIl(_IlIl, "\x48\x74\x74\x70\x53\x65\x72\x76\x69\x63\x65")
-local _LPl = _Pll.LocalPlayer
-local _Z3 = Vector3.new(0x0, 0x0, 0x0)
-local _C, _H, _HR
+local _P = _Il1(_lI, "\x50\x6c\x61\x79\x65\x72\x73")
+local _R = _Il1(_lI, "\x52\x75\x6e\x53\x65\x72\x76\x69\x63\x65")
+local _U = _Il1(_lI, "\x55\x73\x65\x72\x49\x6e\x70\x75\x74\x53\x65\x72\x76\x69\x63\x65")
+local _H = _Il1(_lI, "\x48\x74\x74\x70\x53\x65\x72\x76\x69\x63\x65")
+local _lp = _P.LocalPlayer
+local _Z = Vector3.zero
+local _ch, _hu, _hrp
 
 local _aF = not not 0x1; local _aS = not not 0x1; local _cQ = not not 0x1; local _aC = not 0x1
-local _M_V = (0x3B + 0x24) -- 95
-local _A_L = (0x40 + 0x15) -- 85
-local _S_D = 0x12 -- 18
-local _R_S_D = 0x2E -- 46
-local _F_T = 0.12
+local _MV = 0x5F; local _AL = 0x55; local _SD = 0x12; local _RSD = 0x2E; local _FT = 0.12
 
-local _lSC, _pSC; local _lV = _Z3; local _fU = 0x0; local _aCR = 0xC; local _aCP = {}
-local _D_CF = CFrame.new(-223.617, 66.553, 487.554)
-local _s1CF = _D_CF; local _iP = not not 0x1
-local _C_F = "\x41\x6e\x74\x69\x46\x6c\x69\x6e\x67\x53\x6c\x6f\x74\x31\x5f" .. _IlIl.PlaceId .. "_" .. _LPl.UserId .. "\x2e\x6a\x73\x6f\x6e"
-local _hFA = type(writefile) == "\x66\x75\x6e\x63\x74\x69\x6f\x6e" and type(readfile) == "\x66\x75\x6e\x63\x74\x69\x6f\x6e"
+local _lSC, _pSC; local _lV = _Z; local _fU = 0x0; local _aCR = 0xC; local _aCP = {}
+local _DCF = CFrame.new(-223.617, 66.553, 487.554)
+local _s1C = _DCF; local _iP = not not 0x1
+local _CF = "\x41\x6e\x74\x69\x46\x6c\x69\x6e\x67\x53\x6c\x6f\x74\x31\x5f" .. _lI.PlaceId .. "_" .. _lp.UserId .. "\x2e\x6a\x73\x6f\x6e"
+local _hF = type(writefile) == "\x66\x75\x6e\x63\x74\x69\x6f\x6e" and type(readfile) == "\x66\x75\x6e\x63\x74\x69\x6f\x6e"
 
 local function _c2t(c) return {c:GetComponents()} end
 local function _t2c(t)
@@ -63,29 +59,22 @@ local function _t2c(t)
 end
 
 local function _sS1()
-    if not _hFA then return end
-    local _d = {cf = _c2t(_s1CF), perm = _iP}
-    pcall(function() writefile(_C_F, _Hll:JSONEncode(_d)) end)
+    if not _hF then return end
+    pcall(function() writefile(_CF, _H:JSONEncode({cf = _c2t(_s1C), perm = _iP})) end)
 end
 
 local function _lS1()
-    if not _hFA or not isfile(_C_F) then return end
-    local _o, _r = pcall(readfile, _C_F)
-    if not _o then return end
-    local _o2, _d = pcall(function() return _Hll:JSONDecode(_r) end)
-    if not _o2 then return end
-    if _d and _d.cf then
-        local _cf = _t2c(_d.cf)
-        if _cf then _s1CF = _cf end
-    end
+    if not _hF or not isfile(_CF) then return end
+    local _o, _r = pcall(readfile, _CF); if not _o then return end
+    local _o2, _d = pcall(function() return _H:JSONDecode(_r) end); if not _o2 then return end
+    if _d and _d.cf then local _c = _t2c(_d.cf); if _c then _s1C = _c end end
     if _d and _d.perm ~= nil then _iP = _d.perm end
 end
 _lS1()
 
-local _wG = Instance.new("\x53\x63\x72\x65\x65\x6e\x47\x75\x69", _LPl.PlayerGui)
+local _wG = Instance.new("\x53\x63\x72\x65\x65\x6e\x47\x75\x69", _lp.PlayerGui)
 _wG.Name = "\x47\x6f\x6c\x64\x42\x65\x72\x67\x57\x61\x74\x65\x72\x6d\x61\x72\x6b"
 _wG.ResetOnSpawn = not 0x1; _wG.IgnoreGuiInset = not not 0x1; _wG.DisplayOrder = 0x1869F
-
 local _wL = Instance.new("\x54\x65\x78\x74\x4c\x61\x62\x65\x6c", _wG)
 _wL.AnchorPoint = Vector2.new(0.5, 0x1); _wL.Position = UDim2.new(0.5, 0x0, 0x1, -0x3C)
 _wL.Size = UDim2.new(0x0, 0xC8, 0x0, 0x1E); _wL.BackgroundTransparency = 0x1
@@ -102,45 +91,64 @@ local function _rAP()
                 end
             end
         end
-    end
-    _aCP = {}
+    end; _aCP = {}
 end
 
 local function _sC(c)
-    _C = c; _H = _C:WaitForChild("\x48\x75\x6d\x61\x6e\x6f\x69\x64"); _HR = _C:WaitForChild("\x48\x75\x6d\x61\x6e\x6f\x69\x64\x52\x6f\x6f\x74\x50\x61\x72\x74")
-    _lSC = _HR.CFrame; _lV = _Z3
-    _H:SetStateEnabled(Enum.HumanoidStateType.FallingDown, not 0x1)
-    _H:SetStateEnabled(Enum.HumanoidStateType.Ragdoll, not 0x1)
-    _H:SetStateEnabled(Enum.HumanoidStateType.Physics, not 0x1)
-    _H:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding, not 0x1)
-    _HR.CustomPhysicalProperties = PhysicalProperties.new(0.1,0x0,0x0,0x0,0x0)
+    _ch = c; _hu = _ch:WaitForChild("\x48\x75\x6d\x61\x6e\x6f\x69\x64"); _hrp = _ch:WaitForChild("\x48\x75\x6d\x61\x6e\x6f\x69\x64\x52\x6f\x6f\x74\x50\x61\x72\x74")
+    _lSC = _hrp.CFrame; _lV = _Z
+    _hu:SetStateEnabled(Enum.HumanoidStateType.FallingDown, not 0x1)
+    _hu:SetStateEnabled(Enum.HumanoidStateType.Ragdoll, not 0x1)
+    _hu:SetStateEnabled(Enum.HumanoidStateType.Physics, not 0x1)
+    _hu:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding, not 0x1)
+    _hrp.CustomPhysicalProperties = PhysicalProperties.new(0.1,0x0,0x0,0x0,0x0)
     _rAP()
 end
-_LPl.CharacterAdded:Connect(_sC)
-if _LPl.Character then _sC(_LPl.Character) end
+_lp.CharacterAdded:Connect(_sC); if _lp.Character then _sC(_lp.Character) end
 
 local _CBG = Color3.fromRGB(0xC, 0xC, 0xF); local _CBT = Color3.fromRGB(0x23, 0x23, 0x28)
 local _CTX = Color3.fromRGB(0xFF, 0xFF, 0xFF); local _CGR = Color3.fromRGB(0x0, 0xB4, 0x5A)
 
-local _g = Instance.new("\x53\x63\x72\x65\x65\x6e\x47\x75\x69", _LPl.PlayerGui)
-_g.Name = "\x41\x6e\x74\x69\x46\x6c\x69\x6e\x67\x5f\x4d\x6f\x62\x69\x6c\x65"
-_g.ResetOnSpawn = not 0x1
+local _g = Instance.new("\x53\x63\x72\x65\x65\x6e\x47\x75\x69", _lp.PlayerGui)
+_g.Name = "\x41\x6e\x74\x69\x46\x6c\x69\x6e\x67\x5f\x4d\x6f\x62\x69\x6c\x65\x5f\x50\x72\x6f"; _g.ResetOnSpawn = not 0x1
 
 local _f = Instance.new("\x46\x72\x61\x6d\x65", _g)
-_f.Size = UDim2.new(0x0, 0xD2, 0x0, 0xF0); _f.Position = UDim2.new(0x0, 0xA, 0.5, -0x78)
+_f.Size, _f.Position = UDim2.new(0x0, 0xD2, 0x0, 0xF0), UDim2.new(0x0, 0xA, 0.5, -0x78)
 _f.BackgroundColor3 = _CBG; _f.Active, _f.Draggable = not not 0x1, not not 0x1
 Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _f).CornerRadius = UDim.new(0x0, 0x8)
 local _st = Instance.new("\x55\x49\x53\x74\x72\x6f\x6b\x65", _f)
 _st.Thickness, _st.Color = 0x1, Color3.fromRGB(0x2D, 0x2D, 0x32)
 
 local _tB = Instance.new("\x46\x72\x61\x6d\x65", _f)
-_tB.Size = UDim2.new(0x1, 0x0, 0x0, 0x1E); _tB.BackgroundTransparency = 0x1
+_tB.Size, _tB.BackgroundTransparency = UDim2.new(0x1, 0x0, 0x0, 0x1E), 0x1
+local _tL = Instance.new("\x54\x65\x78\x74\x4c\x61\x62\x65\x6c", _tB)
+_tL.Size, _tL.Position = UDim2.new(0x1, -0x37, 0x1, 0x0), UDim2.new(0x0, 0x8, 0x0, 0x0)
+_tL.BackgroundTransparency, _tL.Text = 0x1, "\x4a\x6f\x65\x4d\x4b\x5f\x47\x6f\x6c\x64\x42\x65\x72\x67\x20\x49\x41"
+_tL.TextColor3, _tL.Font, _tL.TextSize = _CTX, Enum.Font.GothamBlack, 0xB
+_tL.TextXAlignment = Enum.TextXAlignment.Left
+
+local _bP = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _tB)
+_bP.Size, _bP.Position = UDim2.new(0x0, 0x16, 0x0, 0x16), UDim2.new(0x1, -0x30, 0x0, 0x4)
+_bP.Text, _bP.Font, _bP.TextSize = "\xe2\x9c\x8f\xef\xb8\x8f", Enum.Font.GothamBold, 0xB
+_bP.TextColor3, _bP.BackgroundColor3 = _CTX, _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bP).CornerRadius = UDim.new(0x0, 0x5)
+
+local _bM = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _tB)
+_bM.Size, _bM.Position = UDim2.new(0x0, 0x16, 0x0, 0x16), UDim2.new(0x1, -0x18, 0x0, 0x4)
+_bM.Text, _bM.Font, _bM.TextSize = "-", Enum.Font.GothamBold, 0xE
+_bM.TextColor3, _bM.BackgroundColor3 = _CTX, _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bM).CornerRadius = UDim.new(0x0, 0x5)
 
 local _mC = Instance.new("\x46\x72\x61\x6d\x65", _f)
 _mC.Size, _mC.Position = UDim2.new(0x1, 0x0, 0x1, -0x1E), UDim2.new(0x0, 0x0, 0x0, 0x1E)
 _mC.BackgroundTransparency = 0x1
 
-local function _mB(t, y, p)
+local _pM = not 0x1
+_bM.MouseButton1Click:Connect(function()
+    _pM = not _pM; _mC.Visible = not _pM
+    _f.Size = _pM and UDim2.new(0x0, 0xD2, 0x0, 0x1E) or UDim2.new(0x0, 0xD2, 0x0, 0xF0)
+    _bM.Text = _pM and "+" or "-"
+end)
+
+local function _mkB(t, y, p)
     local _b = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", p)
     _b.Size, _b.Position = UDim2.new(0x1, -0x10, 0x0, 0x19), UDim2.new(0x0, 0x8, 0x0, y)
     _b.Text, _b.Font, _b.TextSize = t, Enum.Font.GothamBold, 0xB
@@ -149,70 +157,154 @@ local function _mB(t, y, p)
     return _b
 end
 
-local _bF = _mB("\x41\x4e\x54\x49\x20\x46\x4c\x49\x4e\x47", 0x2, _mC); _bF.BackgroundColor3 = _CGR
-local _bE = _mB("\x43\x4f\x4e\x47\x45\x4c\x41\x52", 0x1F, _mC); _bE.BackgroundColor3 = _CGR
-local _bS = _mB("\x41\x4e\x54\x49\x20\x53\x49\x54", 0x3C, _mC); _bS.BackgroundColor3 = _CGR
-local _bAC = _mB("\x41\x4e\x54\x49\x20\x43\x4f\x4e\x54\x41\x43\x54\x4f", 0x59, _mC) 
-local _bSa = _mB("\x47\x55\x41\x52\x44\x41\x52\x20\x50\x4f\x53", 0x76, _mC)
+local _bF = _mkB("\xe2\x9a\xab\x20\x41\x4e\x54\x49\x20\x46\x4c\x49\x4e\x47\x3a\x20\x4f\x4e", 0x2, _mC); _bF.BackgroundColor3 = _CGR
+local _bE = _mkB("\xf0\x9f\x9b\xa1\xef\xb8\x8f\x20\x43\x4f\x4e\x47\x45\x4c\x41\x52\x20\x51\x55\x49\x45\x54\x4f\x3a\x20\x4f\x4e", 0x1F, _mC); _bE.BackgroundColor3 = _CGR
+local _bS = _mkB("\xe2\x9a\xab\x20\x41\x4e\x54\x49\x20\x53\x49\x54\x3a\x20\x4f\x4e", 0x3C, _mC); _bS.BackgroundColor3 = _CGR
+local _bAC = _mkB("\xe2\x9a\xaa\x20\x41\x4e\x54\x49\x20\x43\x4f\x4e\x54\x41\x43\x54\x4f\x3a\x20\x4f\x46\x46", 0x59, _mC) 
+local _bSv = _mkB("\xf0\x9f\x92\xbe\x20\x47\x55\x41\x52\x44\x41\x52\x20\x50\x4f\x53\x49\x43\x49\x4f\x4e", 0x76, _mC)
 
--- LOGICA MOVIL
-_Rll.Heartbeat:Connect(function()
-    if not _aF and not _aS then return end
-    if not _HR or not _H then return end
-    if not _lSC then _lSC = _HR.CFrame end
-    local _n = os.clock()
-    local _eM = _Ull.TouchEnabled
-    local _sM = (_H.MoveDirection.Magnitude > 0x0 or _H.Jump) and _eM
+local _sSp = Instance.new("\x46\x72\x61\x6d\x65", _mC)
+_sSp.Size, _sSp.Position = UDim2.new(0x1, -0x10, 0x0, 0x1), UDim2.new(0x0, 0x8, 0x0, 0x96)
+_sSp.BackgroundColor3 = Color3.fromRGB(0x2D, 0x2D, 0x32)
 
-    if _aS and _H.Sit then
-        _H.Sit = not 0x1; _H:ChangeState(Enum.HumanoidStateType.GettingUp)
-    end
-    if _aF and _cQ and not _sM then
-        _HR.CFrame = _lSC; _HR.AssemblyLinearVelocity, _HR.AssemblyAngularVelocity = _Z3, _Z3
-        return
-    end
+local _sFr = Instance.new("\x46\x72\x61\x6d\x65", _mC)
+_sFr.Size, _sFr.Position, _sFr.BackgroundTransparency = UDim2.new(0x1, -0x10, 0x0, 0x30), UDim2.new(0x0, 0x8, 0x0, 0x9C), 0x1
 
-    if not _aF then return end
-    local _v = _HR.AssemblyLinearVelocity
-    if _v.Magnitude > 0xB4 then _fU = _n + _F_T end
-    local _a = _HR.AssemblyAngularVelocity
-    if _a.Magnitude > 0x50 then _HR.AssemblyAngularVelocity = _Z3; _HR.CFrame = _lSC end
-    local _ac = _v - _lV; _lV = _v
-    local _mM = _H.MoveDirection.Magnitude
-    local _md = (_HR.Position - _lSC.Position).Magnitude
-    
-    if _mM > 0x0 and _md > _S_D * 0x3 then
-        _HR.CFrame = _lSC; _HR.AssemblyLinearVelocity, _HR.AssemblyAngularVelocity = _Z3, _Z3
-    end
-    if _md > _R_S_D then
-        _HR.CFrame = _pSC or _lSC; _HR.AssemblyLinearVelocity, _HR.AssemblyAngularVelocity = _Z3, _Z3
-    end
-    
-    local _oG = _H.FloorMaterial ~= Enum.Material.Air
-    local _nM = _v.Magnitude < _M_V and _ac.Magnitude < _A_L and _md < _S_D
-    if _oG and _nM then _pSC = _lSC; _lSC = _HR.CFrame end
-    
-    if (_v.Magnitude > _M_V or _ac.Magnitude > _A_L or (_mM == 0x0 and _md > _S_D)) then _fU = _n + _F_T end
-    if _n < _fU and _lSC then
-        _HR.CFrame = _lSC; _HR.AssemblyLinearVelocity, _HR.AssemblyAngularVelocity = _Z3, _Z3
+local _bS1 = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _sFr)
+_bS1.Size, _bS1.Position = UDim2.new(0x0, 0x3A, 0x0, 0x1A), UDim2.new(0x0, 0x0, 0x0, 0x12)
+_bS1.Text, _bS1.Font, _bS1.TextSize = "\x53\x4c\x4f\x54\x20\x31", Enum.Font.GothamBlack, 0xA
+_bS1.TextColor3, _bS1.BackgroundColor3 = _CTX, _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bS1).CornerRadius = UDim.new(0x0, 0x5)
+
+local _bPe = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _sFr)
+_bPe.Size, _bPe.Position = UDim2.new(0x0, 0x20, 0x0, 0x1A), UDim2.new(0x0, 0x3E, 0x0, 0x12)
+_bPe.Text, _bPe.Font, _bPe.TextSize = "\x50", Enum.Font.GothamBlack, 0xC
+_bPe.TextColor3, _bPe.BackgroundColor3 = _CTX, _iP and _CGR or _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bPe).CornerRadius = UDim.new(0x0, 0x5)
+
+local _bTp = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _sFr)
+_bTp.Size, _bTp.Position = UDim2.new(0x1, -0x64, 0x0, 0x1A), UDim2.new(0x0, 0x64, 0x0, 0x12)
+_bTp.Text, _bTp.Font, _bTp.TextSize = "\xf0\x9f\x9a\x80\x20\x54\x50", Enum.Font.GothamBold, 0xB
+_bTp.TextColor3, _bTp.BackgroundColor3 = _CTX, _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bTp).CornerRadius = UDim.new(0x0, 0x5)
+
+local _sTl = Instance.new("\x54\x65\x78\x74\x4c\x61\x62\x65\x6c", _sFr)
+_sTl.Size, _sTl.Position, _sTl.BackgroundTransparency = UDim2.new(0x1, 0x0, 0x0, 0xE), UDim2.new(0x0, 0x0, 0x0, 0x0), 0x1
+_sTl.Text, _sTl.TextColor3, _sTl.Font, _sTl.TextSize = "\x43\x4f\x4f\x52\x44\x45\x4e\x41\x44\x41\x20\x47\x55\x41\x52\x44\x41\x44\x41", Color3.fromRGB(0xB4, 0xB4, 0xB4), Enum.Font.GothamBold, 0x9
+_sTl.TextXAlignment = Enum.TextXAlignment.Left
+
+_bS1.MouseButton1Click:Connect(function()
+    if _hrp then
+        _s1C = _hrp.CFrame; _sS1(); _bS1.BackgroundColor3 = _CGR
+        task.delay(0.5, function() _bS1.BackgroundColor3 = _CBT end)
     end
 end)
 
-_Rll.Stepped:Connect(function()
-    if not _C or not _aC then 
-        if next(_aCP) then _rAP() end; return 
+_bPe.MouseButton1Click:Connect(function()
+    _iP = not _iP; _bPe.BackgroundColor3 = _iP and _CGR or _CBT; _sS1()
+end)
+
+_bTp.MouseButton1Click:Connect(function()
+    if _hrp and _s1C then
+        _hrp.CFrame = _s1C; _lSC, _pSC = _s1C, _s1C
+        _hrp.AssemblyLinearVelocity = _Z; _hrp.AssemblyAngularVelocity = _Z
     end
-    local _r = _HR; if not _r then return end
-    for _, _m in ipairs(workspace:GetChildren()) do
-        if _m:IsA("\x4d\x6f\x64\x65\x6c") and _m ~= _C then
-            local _tH = _m:FindFirstChild("\x48\x75\x6d\x61\x6e\x6f\x69\x64\x52\x6f\x6f\x74\x50\x61\x72\x74")
-            local _tHu = _m:FindFirstChildOfClass("\x48\x75\x6d\x61\x6e\x6f\x69\x64")
+end)
+
+local _pMo = Instance.new("\x46\x72\x61\x6d\x65", _g)
+_pMo.Size, _pMo.Position = UDim2.new(0x0, 0xDC, 0x0, 0x78), UDim2.new(0.5, -0x6E, 0.5, -0x3C)
+_pMo.BackgroundColor3, _pMo.Visible, _pMo.ZIndex = _CBG, not 0x1, 0x64
+Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _pMo).CornerRadius = UDim.new(0x0, 0x8)
+local _mSt = Instance.new("\x55\x49\x53\x74\x72\x6f\x6b\x65", _pMo)
+_mSt.Thickness, _mSt.Color = 0x1, Color3.fromRGB(0x3C, 0x3C, 0x41)
+
+local _mTl = Instance.new("\x54\x65\x78\x74\x4c\x61\x62\x65\x6c", _pMo)
+_mTl.Size, _mTl.Position = UDim2.new(0x1, -0x14, 0x0, 0x19), UDim2.new(0x0, 0xA, 0x0, 0x5)
+_mTl.BackgroundTransparency, _mTl.Text = 0x1, "\x51\x75\x69\x74\x61\x72\x20\x4d\x61\x72\x63\x61\x20\x64\x65\x20\x41\x67\x75\x61"
+_mTl.TextColor3, _mTl.Font, _mTl.TextSize, _mTl.ZIndex = _CTX, Enum.Font.GothamBold, 0xB, 0x65
+
+local _pIn = Instance.new("\x54\x65\x78\x74\x42\x6f\x78", _pMo)
+_pIn.Size, _pIn.Position = UDim2.new(0x1, -0x14, 0x0, 0x1C), UDim2.new(0x0, 0xA, 0x0, 0x23)
+_pIn.PlaceholderText, _pIn.Text = "\x45\x73\x63\x72\x69\x62\x65\x20\x6c\x61\x20\x63\x6f\x6e\x74\x72\x61\x73\x65\xc3\xb1\x61\x2e\x2e\x2e", ""
+_pIn.Font, _pIn.TextSize, _pIn.ZIndex = Enum.Font.Gotham, 0xB, 0x65
+_pIn.TextColor3, _pIn.BackgroundColor3 = _CTX, _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _pIn).CornerRadius = UDim.new(0x0, 0x5)
+
+local _bSu = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _pMo)
+_bSu.Size, _bSu.Position = UDim2.new(0.48, -0x5, 0x0, 0x1A), UDim2.new(0x0, 0xA, 0x0, 0x48)
+_bSu.Text, _bSu.Font, _bSu.TextSize, _bSu.ZIndex = "\x43\x6f\x6e\x66\x69\x72\x6d\x61\x72", Enum.Font.GothamBold, 0xB, 0x65
+_bSu.TextColor3, _bSu.BackgroundColor3 = _CTX, _CGR; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bSu).CornerRadius = UDim.new(0x0, 0x5)
+
+local _bCl = Instance.new("\x54\x65\x78\x74\x42\x75\x74\x74\x6f\x6e", _pMo)
+_bCl.Size, _bCl.Position = UDim2.new(0.48, -0x5, 0x0, 0x1A), UDim2.new(0.52, 0x0, 0x0, 0x48)
+_bCl.Text, _bCl.Font, _bCl.TextSize, _bCl.ZIndex = "\x43\x61\x6e\x63\x65\x6c\x61\x72", Enum.Font.GothamBold, 0xB, 0x65
+_bCl.TextColor3, _bCl.BackgroundColor3 = _CTX, _CBT; Instance.new("\x55\x49\x43\x6f\x72\x6e\x65\x72", _bCl).CornerRadius = UDim.new(0x0, 0x5)
+
+_bP.MouseButton1Click:Connect(function() _pMo.Visible = not _pMo.Visible; _pIn.Text = "" end)
+_bCl.MouseButton1Click:Connect(function() _pMo.Visible = not 0x1 end)
+_bSu.MouseButton1Click:Connect(function()
+    if string.lower(_pIn.Text) == "\x67\x72\x61\x63\x69\x61\x73\x20\x6a\x6f\x65" then
+        if _wG then _wG:Destroy() end; _pMo.Visible = not 0x1
+    else
+        _pIn.Text = ""; _pIn.PlaceholderText = "\xe2\x9d\x8c\x20\x43\x6f\x6e\x74\x72\x61\x73\x65\xc3\xb1\x61\x20\x49\x6e\x63\x6f\x72\x72\x65\x63\x74\x61"
+    end
+end)
+
+_bF.MouseButton1Click:Connect(function() _aF = not _aF; _bF.Text = _aF and "\xe2\x9a\xab\x20\x41\x4e\x54\x49\x20\x46\x4c\x49\x4e\x47\x3a\x20\x4f\x4e" or "\xe2\x9a\xaa\x20\x41\x4e\x54\x49\x20\x46\x4c\x49\x4e\x47\x3a\x20\x4f\x46\x46"; _bF.BackgroundColor3 = _aF and _CGR or _CBT end)
+_bSv.MouseButton1Click:Connect(function() if _hrp then _pSC, _lSC = _lSC, _hrp.CFrame; _hrp.AssemblyLinearVelocity, _hrp.AssemblyAngularVelocity = _Z, _Z end end)
+_bS.MouseButton1Click:Connect(function() _aS = not _aS; _bS.Text = _aS and "\xe2\x9a\xab\x20\x41\x4e\x54\x49\x20\x53\x49\x54\x3a\x20\x4f\x4e" or "\xe2\x9a\xaa\x20\x41\x4e\x54\x49\x20\x53\x49\x54\x3a\x20\x4f\x46\x46"; _bS.BackgroundColor3 = _aS and _CGR or _CBT end)
+_bE.MouseButton1Click:Connect(function() _cQ = not _cQ; _bE.Text = _cQ and "\xf0\x9f\x9b\xa1\xef\xb8\x8f\x20\x43\x4f\x4e\x47\x45\x4c\x41\x52\x20\x51\x55\x49\x45\x54\x4f\x3a\x20\x4f\x4e" or "\xf0\x9f\x9b\xa1\xef\xb8\x8f\x20\x43\x4f\x4e\x47\x45\x4c\x41\x52\x20\x51\x55\x49\x45\x54\x4f\x3a\x20\x4f\x46\x46"; _bE.BackgroundColor3 = _cQ and _CGR or _CBT end)
+_bAC.MouseButton1Click:Connect(function() _aC = not _aC; _bAC.Text = _aC and "\xe2\x9a\xab\x20\x41\x4e\x54\x49\x20\x43\x4f\x4e\x54\x41\x43\x54\x4f\x3a\x20\x4f\x4e" or "\xe2\x9a\xaa\x20\x41\x4e\x54\x49\x20\x43\x4f\x4e\x54\x41\x43\x54\x4f\x3a\x20\x4f\x46\x46"; _bAC.BackgroundColor3 = _aC and _CGR or _CBT; if not _aC then _rAP() end end)
+
+_R.Heartbeat:Connect(function()
+    if not _aF and not _aS then return end
+    if not _hrp or not _hu then return end
+    if not _lSC then _lSC = _hrp.CFrame end
+    local _n = os.clock()
+    local _eM = _U.TouchEnabled
+    local _sM = (_hu.MoveDirection.Magnitude > 0x0 or _hu.Jump) and _eM
+
+    if _aS and _hu.Sit then _hu.Sit = not 0x1; _hu:ChangeState(Enum.HumanoidStateType.GettingUp) end
+
+    if _aF and _cQ and not _sM then
+        _hrp.CFrame = _lSC; _hrp.AssemblyLinearVelocity, _hrp.AssemblyAngularVelocity = _Z, _Z; return
+    end
+
+    if not _aF then return end
+    local _v = _hrp.AssemblyLinearVelocity
+    if _v.Magnitude > 0xB4 then _fU = _n + _FT end
+    local _a = _hrp.AssemblyAngularVelocity
+    if _a.Magnitude > 0x50 then _hrp.AssemblyAngularVelocity = _Z; _hrp.CFrame = _lSC end
+    local _ac = _v - _lV; _lV = _v
+    local _mM = _hu.MoveDirection.Magnitude
+    local _md = (_hrp.Position - _lSC.Position).Magnitude
+    
+    if _mM > 0x0 and _md > _SD * 0x3 then
+        _hrp.CFrame = _lSC; _hrp.AssemblyLinearVelocity, _hrp.AssemblyAngularVelocity = _Z, _Z
+    end
+    if _md > _RSD then
+        _hrp.CFrame = _pSC or _lSC; _hrp.AssemblyLinearVelocity, _hrp.AssemblyAngularVelocity = _Z, _Z
+    end
+    
+    local _oG = _hu.FloorMaterial ~= Enum.Material.Air
+    local _nM = _v.Magnitude < _MV and _ac.Magnitude < _AL and _md < _SD
+    if _oG and _nM then _pSC = _lSC; _lSC = _hrp.CFrame end
+    
+    if (_v.Magnitude > _MV or _ac.Magnitude > _AL or (_mM == 0x0 and _md > _SD)) then _fU = _n + _FT end
+    if _n < _fU and _lSC then
+        _hrp.CFrame = _lSC; _hrp.AssemblyLinearVelocity, _hrp.AssemblyAngularVelocity = _Z, _Z
+    end
+end)
+
+_R.Stepped:Connect(function()
+    if not _ch or not _aC then if next(_aCP) then _rAP() end; return end
+    local _r = _hrp; if not _r then return end
+    for _, _mo in ipairs(workspace:GetChildren()) do
+        if _mo:IsA("\x4d\x6f\x64\x65\x6c") and _mo ~= _ch then
+            local _tH = _mo:FindFirstChild("\x48\x75\x6d\x61\x6e\x6f\x69\x64\x52\x6f\x6f\x74\x50\x61\x72\x74")
+            local _tHu = _mo:FindFirstChildOfClass("\x48\x75\x6d\x61\x6e\x6f\x69\x64")
             if _tH and _tHu then
                 if (_r.Position - _tH.Position).Magnitude <= _aCR then
-                    if not _aCP[_m] then _aCP[_m] = not not 0x1 end
-                    for _, _p in ipairs(_m:GetDescendants()) do
-                        if _p:IsA("\x42\x61\x73\x65\x50\x61\x72\x74") then
-                            _p.CanCollide = not 0x1; _p.CanTouch = not 0x1; _p.CanQuery = not 0x1
+                    if not _aCP[_mo] then _aCP[_mo] = not not 0x1 end
+                    for _, _pa in ipairs(_mo:GetDescendants()) do
+                        if _pa:IsA("\x42\x61\x73\x65\x50\x61\x72\x74") then
+                            _pa.CanCollide = not 0x1; _pa.CanTouch = not 0x1; _pa.CanQuery = not 0x1
                         end
                     end
                 end
@@ -220,11 +312,4 @@ _Rll.Stepped:Connect(function()
         end
     end
 end)
-
-_bF.MouseButton1Click:Connect(function() _aF = not _aF; _bF.BackgroundColor3 = _aF and _CGR or _CBT end)
-_bE.MouseButton1Click:Connect(function() _cQ = not _cQ; _bE.BackgroundColor3 = _cQ and _CGR or _CBT end)
-_bS.MouseButton1Click:Connect(function() _aS = not _aS; _bS.BackgroundColor3 = _aS and _CGR or _CBT end)
-_bAC.MouseButton1Click:Connect(function() _aC = not _aC; _bAC.BackgroundColor3 = _aC and _CGR or _CBT; if not _aC then _rAP() end end)
-_bSa.MouseButton1Click:Connect(function() if _HR then _pSC, _lSC = _lSC, _HR.CFrame; _HR.AssemblyLinearVelocity, _HR.AssemblyAngularVelocity = _Z3, _Z3 end end)
-
 game:BindToClose(_rAP)
